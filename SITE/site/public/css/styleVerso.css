@@ -1,0 +1,300 @@
+@font-face{
+    font-family: 'VetoSansCond-BoldItalic';
+    src: url('VetoSans-BoldItalic.ttf');
+}
+
+#header2 .navBar2 {
+
+    background: purple;
+    font-size: 15px;
+    height: 21px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    list-style: none;
+    margin-right: 15px;
+    
+}
+
+.container {
+    background: purple;
+    color: white;
+    padding: 0.5px;
+    width: 100%;
+    height: 55px;
+}
+
+
+#logo {
+
+    display: flex;
+    justify-content: space-evenly;
+    width: 45px;
+    height: 45px;
+    margin-right: 655px;
+    margin-left: 205px;
+    align-items: center;
+
+}
+
+
+#header2{
+    margin-top: -3px;
+    
+}
+    
+    
+    #header2 .navBar2 {
+    
+        font-size: 15px;
+        height: 21px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-decoration: none;
+        list-style: none;
+        margin-right: 15px;
+        
+    
+    }
+    
+    #header2 .navBar a:link {
+        color: white;
+        text-decoration: none;
+    }
+    
+    #header2 .navBar a:active {
+        color: white;
+        text-decoration: none;
+    }
+    
+    #header2 .navBar a:visited {
+        color: white;
+        text-decoration: none;
+    }
+    
+    
+    
+    #header2 .navBar2 a:link {
+        color: white;
+        text-decoration: none;
+    }
+    
+    #header2 .navBar2 a:active {
+        color: white;
+        text-decoration: none;
+    }
+    
+    #header2 .navBar2 a:visited {
+        color: white;
+        text-decoration: none;
+    }
+    
+#aranhaNav{
+    transition-duration: 0.5s;
+}
+
+#aranhaNav:hover{
+    box-shadow: 5px 4px rgb(97, 7, 97);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+/* Cards descritivos */
+
+#container3{
+    background-image: url("https://c4.wallpaperflare.com/wallpaper/194/992/899/spider-verse-spiderverse-into-the-spiderverse-spiderman-miles-morales-new-york-city-hd-wallpaper-preview.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: -7%;
+    
+}
+
+figcaption{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    font-size: 30px;
+
+}
+
+
+#cardMiles{
+    /* border: 4px solid red; */
+    /* border-style: inset; */
+    width: 450px;
+}
+.milesfig{
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-size: 25px;
+margin-left: 30%;
+color: rgb(238, 41, 41);
+font-size: 30px;
+
+}
+
+#miles{
+    background: rgba(45, 6, 73, 0.397);
+    padding: 4%;
+}
+
+#miles img{
+    width: 350px;
+    padding: 10px;
+    height: 350px;
+    margin-top: 3%;
+    margin-left: 8%;
+    border: 4px solid red;
+}
+
+
+.descricaoMiles{
+    width: 480px;
+    height: 280px;
+    text-align: justify;
+    align-items: center;
+    margin-left: 50%;
+    margin-top: -21%;
+    color: red;
+}
+
+
+#spiderGwen{
+    background: rgba(221, 47, 76, 0.397);
+    padding: 4%;
+}
+
+.gwenFig{
+    margin-left: 78%;
+    color: aqua;
+}
+
+#spiderGwen img{
+    width: 350px;
+    padding: 10px;
+    height: 350px;
+    margin-left: 70%;
+    border: 4px solid aquamarine;
+}
+
+.descricaoGwen{
+    width: 480px;
+    height: 280px;
+    text-align: justify;
+    align-items: center;
+    margin-left: 12%;
+    margin-top: -21%;
+    color: pink;
+}
+
+#aranhaNoir{
+background: rgba(0, 0, 0, 0.577);
+padding: 4%;
+
+}
+
+.noirFig{
+    margin-left: 10%;
+
+}
+
+#aranhaNoir img{
+    width: 350px;
+    padding: 10px;
+    height: 350px;
+    margin-left: 3%;
+    border: 4px solid black;
+}
+
+.descricaoNoir{
+    width: 480px;
+    height: 280px;
+    text-align: justify;
+    align-items: center;
+    margin-left: 50%;
+    margin-top: -21%;
+}
+
+#presuntoAranha{
+    background: rgba(255, 0, 0, 0.553);
+    padding: 4%;
+}
+
+#presuntoAranha img{
+    width: 380px;
+    padding: 10px;
+    height: 350px;
+    border: 4px solid blue;
+    margin-left: 70%;
+}
+
+.presuntoFig{
+    color: blue;
+    margin-left: 78%;
+    
+}
+
+.descricaoPresunto{
+    width: 480px;
+    height: 280px;
+    text-align: justify;
+    align-items: center;
+    margin-left: 12%;
+    margin-top: -21%;
+    color: rgb(8, 8, 121);
+}
+
+
+#Aranha2099{
+    background: rgba(4, 4, 123, 0.533);
+    padding: 4%;
+}
+
+#Aranha2099 img{
+    width: 380px;
+    padding: 10px;
+    height: 350px;
+    border: solid 4px #EA5C00;
+}
+
+.miguelFig{
+    margin-left: 8%;
+    color: #EA5C00;
+}
+
+.descricao2099{
+width: 480px;
+height: 280px;
+text-align: justify;
+align-items: center;
+margin-left: 50%;
+margin-top: -21%;
+}
+
+
+#peniParker{
+    background: rgb(238, 41, 41)
+}
+
+
+/* cadastrar Aranhas */
+.analyticAranha{
+    background-color: rgba(97, 7, 97, 0.438);
+    width: 29%;
+    padding: 9%;
+    margin-left: 25%;
+    margin-top: 15%;
+}
+
+.analyticAranha select{
+    border-radius: 12px;
+    width: 105px;
+    padding: 2px;
+    text-align: center;
+    margin-left: 35%;
+}
+
+.analyticAranha button{
+    margin-top: 15%;
+}
+

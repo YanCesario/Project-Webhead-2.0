@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria de Personagens</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="header">
+
+        <div class="container">
+            <ul class="navBar">
+                <li><img id="logo" src="./WebHead base/Imagens/logo aranha branco.png"></li>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="galeriaPersonagens.html">Galeria de Personagens</a></li>
+                <li id="aranhaNav"><a href="aranhaverso.html">Aranhaverso</a></li>
+                <li>|</li>
+                <li><a href="index.html">Sair</a></li>
+            </ul>
+
+        </div>
+    </div>
+
+    <div id="galeria">
+
+        <h2 id="tituloGaleria">Galeria de Personagens</h2>
+
+        <div id="personagens">
+            <div id="icones">
+                <button onclick="peter()"><img
+                        src="https://www.writeups.org/wp-content/uploads/Ultimate-Spider-Man-Marvel-Comics-Peter-Parker-b.jpg"></button>
+                <button onclick="spider()"><img
+                        src="https://s3.amazonaws.com/comicgeeks/characters/avatars/9576.jpg?t=1663268513"></button>
+                <button onclick="MJ()"><img
+                        src="https://s3.amazonaws.com/comicgeeks/characters/avatars/23169.jpg?t=1674411134"></button>
+                <button onclick="harry()"><img
+                        src="https://s3.amazonaws.com/comicgeeks/characters/avatars/20875.jpg?t=1621765964"></button>
+                <button onclick="tioBen()"><img
+                        src="https://s3.amazonaws.com/comicgeeks/characters/avatars/20874.jpg?t=1621765729"></button>
+                <button onclick="tiaMay()"><img
+                        src="https://s3.amazonaws.com/comicgeeks/characters/avatars/20852.jpg?t=1683673824"></button>
+                <button onclick="norman()"><img
+                        src="https://s3.amazonaws.com/comicgeeks/characters/avatars/9560.jpg?t=1621765763"></button>
+                <button onclick="richard()"><img
+                        src="https://s3.amazonaws.com/comicgeeks/characters/avatars/21602.jpg?t=1679802684"></button>
+                <button onclick="maryParker()"><img
+                        src="https://s3.amazonaws.com/comicgeeks/characters/avatars/21295.jpg?t=1622179599"></button>
+                <button onclick="gwen()"><img
+                        src="https://s3.amazonaws.com/comicgeeks/characters/avatars/20853.jpg?t=1621756129"></button>
+
+                <button onclick="JJonah()"><img
+                        src="https://s3.amazonaws.com/comicgeeks/characters/avatars/1603.jpg?t=1667208741"></button>
+                <button onclick="lagarto()"><img
+                        src="https://s3.amazonaws.com/comicgeeks/characters/avatars/20845.jpg?t=1621754224"></button>
+                <button onclick="venom()"><img src="https://s3.amazonaws.com/comicgeeks/characters/avatars/283.jpg?t=1668998092"></button>
+                <button onclick="electro()"><img
+                        src="https://s3.amazonaws.com/comicgeeks/characters/avatars/3894.jpg?t=1681136053"></button>
+                <button onclick="octavius()"><img
+                        src="https://s3.amazonaws.com/comicgeeks/characters/avatars/3908.jpg?t=1684700650"></button>
+                <button onclick="fisk()"><img
+                        src="https://s3.amazonaws.com/comicgeeks/characters/avatars/213.jpg?t=1664255392"></button>
+                <button onclick="abutre()"><img src="https://s3.amazonaws.com/comicgeeks/characters/avatars/3902.jpg?t=1661546823"></button>
+                <button onclick="schocker()"><img src="https://s3.amazonaws.com/comicgeeks/characters/avatars/3896.jpg?t=1623293643"></button>
+                
+            </div> <br>
+            <h3 id="nomePersonagem"></h3> <br>
+            <div id="Bio">
+
+
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+</body>
+
+</html>
+<script>
+    function peter() {
+
+
+        nomePersonagem.innerHTML = `Peter Parker`
+
+        Bio.innerHTML = `
+
+        
+
+<ul>
+                <li>Nome Real: Peter Benjamin Parker</li>
+                <li>Ocupação: Estudante / Fotógrafo do Clarim Diário / Assistente de Laboratório</li>
+                <li>Reside em: Queens, NY</li>
+                <li>Cor do cabelo: Marrom (escuro)</li>
+                <li>Altura: 1,80m</li>
+                <li>Peso: 75kg</li>
+                <li>Primeira aparição: Amazing Fantasy #15 (5 de Junho de 1962)</li>
+                </ul> 
+                
+                <img id="imagemPeter" src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTP2YrCATiKssdahAGkjr6WEEeY6LyivNGgC2ReBAnoOcMG8VRf">`
+
+    }
+
+    function spider() {
+        nomePersonagem.innerHTML = `Homem-Aranha`
+        Bio.innerHTML = `
+
+<ul>
+<li>Nome Real: Desconhecido</li>
+<li>Ocupação: Amigo da Vizinhança</li>
+<li>Reside em: Desconhecido</li>
+<li>Cor do cabelo: Desconhecido</li>
+<li>Altura: 1,80m</li>
+<li>Peso: Desconhecido</li>
+<li>Primeira Aparição: Amazing Fantasy #15 (5 de Junho de 1962)</li>
+</ul>
+
+<img src="https://marveldude.files.wordpress.com/2014/06/ultimate-comics-spider-man-156-dosm.jpg">
+
+
+`
+
+    }
+
+    function MJ() {
+        nomePersonagem.innerHTML = `Mary Jane`
+
+        Bio.innerHTML = `<ul>
+<li>Nome Real: Mary Jane Watson</li>
+<li>Ocupação: Estudante</li>
+<li>Reside em: Queens, NY</li>
+<li>Cor do Cabelo: Ruivo</li>
+<li>Altura: 1,73m</li>
+<li>Peso: 54kg</li>
+<li>Primeira Aparição: The Amazing Spider-Man #45 (11 de Março de 1965)</li>
+</ul>
+
+<img src="https://i.pinimg.com/originals/3f/e5/6b/3fe56bee09daec200ed9fa71356148e9.png">
+`
+    }
+
+    function harry() {
+        nomePersonagem.innerHTML = `Harry Osborn`
+
+        Bio.innerHTML = `<ul>
+<li>Nome Real: Harry Theopolis Osborn Jr.</li>
+<li>Ocupação: Estudante</li>
+<li>Reside em: Upper East Side, NY</li>
+<li>Cor do Cabelo: Marrom (escuro)</li>
+<li>Altura: 1,80m</li>
+<li>Peso: 84kg </li>
+<li>Primeira Aparição: The Amazing Spider-Man #31 (9 de Setembro de 1965)</li>
+</ul>
+<img src="https://moviecomicswhoswho.files.wordpress.com/2013/04/harryosborncomics1.jpg">
+`
+
+    }
+
+    function tioBen() {
+        nomePersonagem.innerHTML = `Tio Ben`
+
+        Bio.innerHTML = `<ul>
+<li>Nome Real: Benjamin Franklin Parker</li>
+<li>Ocupação: Aposentado / Ex-militar</li>
+<li>Reside em: Queens, NY</li>
+<li>Cor do Cabelo: Grisalho</li>
+<li>Altura: 1,75m</li>
+<li>Peso: 79kg</li>
+<li>Primeira Aparição: The Amazing Fantasy #15 (5 de Junho de 1962)</li>
+</ul>
+
+<img src="https://assets.mycast.io/characters/ben-parker-1103010-normal.jpg?1603040350">`
+
+    }
+
+    function tiaMay() {
+        nomePersonagem.innerHTML = `Tia May`
+
+        Bio.innerHTML = `<ul>
+<li>Nome Real: Maybelle Reilly Jameson </li>
+<li>Ocupação: Aposentada</li>
+<li>Reside em: Queens, NY</li>
+<li>Cor do Cabelo: Grisalho</li>
+<li>Altura: 1,65m</li>
+<li>Peso: 49kg</li>
+<li>Primeira Aparição: The Amazing Fantasy #15 (5 de Junho de 1962) </li>
+</ul>
+
+<img src="https://assets.mycast.io/characters/aunt-may-293447-normal.jpg?1585372336">`
+
+
+    }
+
+    function norman() {
+        nomePersonagem.innerHTML = `Norman Osborn`
+
+        Bio.innerHTML = `<ul>
+<li>Nome Real: Norman Virgil Osborn</li>
+<li>Ocupação: CEO da Oscorp</li>
+<li>Reside em: Upper East Side, NY</li>
+<li>Cor do Cabelo: Marrom (escuro)</li>
+<li>Altura: 1,80m</li>
+<li>Peso: 83kg</li>
+<li>Primeira Aparição: The Amazing Spider-Man #14 (9 de Abril de 1963)</li>
+</ul>
+
+<img src="https://1.bp.blogspot.com/-UxlggtvaZtM/YPKo5q9kSgI/AAAAAAAAF5o/FCofsqyEzxMidBbojrgk-6Mr0VIje9B9ACNcBGAsYHQ/s960/face.jpg">`
+
+
+    }
+
+    function richard() {
+        nomePersonagem.innerHTML = `Richard Parker`
+
+        Bio.innerHTML = `<ul>
+<li>Nome Real: Richard Laurence Parker</li>
+<li>Ocupação: Cientista / Agente da CIA</li>
+<li>Reside em: Queens, NY</li>
+<li>Cor do Cabelo: Marrom</li>
+<li>Altura: 1,80m </li>
+<li>Peso: 78kg</li>
+<li>Primeira Aparição: The Amazing Spider-Man Annual #5 (13 de Agosto de 1968)</li>
+</ul>
+
+<img src="https://pm1.narvii.com/6168/bf4cd2bd86ce9c7f11f8c35b4e1289c622324e98_00.jpg">`
+    }
+
+    function maryParker() {
+        nomePersonagem.innerHTML = `Mary Parker`
+        Bio.innerHTML = `<ul>
+<li>Nome Real: Mary Teresa Parker </li>
+<li>Ocupação: Cientista / Agente da CIA</li>
+<li>Reside em: Queens, NY</li>
+<li>Cor do Cabelo: Ruivo</li>
+<li>Altura: 1,68m</li>
+<li>Peso: 51kg</li>
+<li>Primeira Aparição: The Amazing Spider-Man Annula #5 (13 de Agosto de 1968)</li>
+</ul>
+
+<img src="https://comicvine.gamespot.com/a/uploads/scale_small/6/67204/1247165-ray_parker.jpg">`
+
+
+    }
+
+    function gwen() {
+        nomePersonagem.innerHTML = `Gwen Stacy`
+        Bio.innerHTML = `<ul>
+    <li>Nome Real: Gwendolyne Maxine Stacy </li>
+    <li>Ocupação: Estudante / Assistente de Laboratório</li>
+    <li>Reside em: Queens, NY</li>
+    <li>Cor do Cabelo: Loiro</li>
+    <li>Altura: 1,68m</li>
+    <li>Peso: 45kg</li>
+    <li>Primeira Aparição: The Amazing Spider-Man #31 (9 de Setembro de 1965)</li>
+</ul>
+
+<img src="https://www.assignmentx.com/wp-content/uploads/2012/06/Ultimate-Gwen.jpg">`
+
+
+
+    }
+
+    function JJonah() {
+        nomePersonagem.innerHTML = `J. Jonah Jameson`
+        Bio.innerHTML = `<ul>
+    <li>Nome Real: John Jonah Jameson</li>
+    <li>Ocupação: Dono do Clarim Diário</li>
+    <li>Reside em: Manhattan, NY</li>
+    <li>Cor do Cabelo: Grisalho</li>
+    <li>Altura: 1,80m</li>
+    <li>Peso: 82kg</li>
+    <li>Primeira Aparição: The Amazing Spider-Man #1 (1 de Março de 1963)</li>
+</ul>
+
+<img src="https://comicvine.gamespot.com/a/uploads/original/5/57906/8132881-j.jonahjameson%283%29.jpg">`
+
+    }
+
+    function lagarto() {
+        nomePersonagem.innerHTML = `Lagarto`
+        Bio.innerHTML = `<ul>
+    <li>Nome Real: Curtis Connors </li>
+    <li>Ocupação: Professor / Cientista</li>
+    <li>Reside em: Manhattan, NY</li>
+    <li>Cor do Cabelo: Marrom (escuro)</li>
+    <li>Altura: 1,52m (como Conners); 1,83m (como Lagarto)</li>
+    <li>Peso: 88kg</li>
+    <li>Primeira Aparição: The Amazing Spider-Man #6 (1 de Novembro de 1963)</li>
+</ul>
+
+<img src="https://i.pinimg.com/originals/d4/00/2b/d4002b5c54303e28dda8f9c9ce7c7594.jpg">`
+
+
+    }
+
+    function electro() {
+        nomePersonagem.innerHTML = `Electro`
+        Bio.innerHTML = `<ul>
+    <li>Nome Real: Maxwell Dillon</li>
+    <li>Ocupação: Criminoso Profissional / Ex-Engenheiro Elétrico</li>
+    <li>Reside em: Endicott, NY</li>
+    <li>Cor do Cabelo: Ruivo</li>
+    <li>Altura: 1,52m</li>
+    <li>Peso: 63kg</li>
+    <li>Primeira Aparição: The Amazing Spider-Man #9 (1 de Fevereiro de 1964)</li>
+</ul>
+
+<img src="https://s3.amazonaws.com/comicgeeks/characters/avatars/40143.jpg?t=1646199071">`
+    }
+
+    function octavius() {
+        nomePersonagem.innerHTML = `Doutor Octopus`
+        Bio.innerHTML = `<ul>
+    <li>Nome Real: Otto Gunther Octavius </li>
+    <li>Ocupação: Criminoso Profissional / Cientista</li>
+    <li>Reside em: Schenectady, NY</li>
+    <li>Cor do Cabelo: Marrom </li>
+    <li>Altura: 1,75m</li>
+    <li>Peso: 111kg </li>
+    <li>Primeira Aparição: The Amazing Spider-Man (10 de Julho de 1963)</li>
+</ul>
+
+<img src="https://comicvine.gamespot.com/a/uploads/original/11121/111214340/4727003-cf46daa028b7c203f6da1a7f96bef54e.jpg">`
+
+    }
+
+    function fisk() {
+        nomePersonagem.innerHTML = `Rei do Crime`
+        Bio.innerHTML = `<ul>
+    <li>Nome Real: Wilson Grant Fisk</li>
+    <li>Ocupação: Mafioso Influente</li>
+    <li>Reside em: Hell's Kitchen, NY</li>
+    <li>Cor do Cabelo: Careca</li>
+    <li>Altura: 2,01m</li>
+    <li>Peso: 204kg</li>
+    <li>Primeira Aparição: The Amazing Spider-Man #50 (11 de Abril de 1967)</li>
+</ul>
+
+<img src="https://qph.cf2.quoracdn.net/main-qimg-3e3c8a6cc7655ea07e3c348c48ffaa7a-lq">`
+
+
+    }
+
+
+    function venom(){
+        nomePersonagem.innerHTML = `Venom`
+        Bio.innerHTML = `<ul>
+    <li>Nome Real: Edward Charles Allan Brock Jr.</li>
+    <li>Ocupação: Repórter do Clarim Diário</li>
+    <li>Reside em: Cidade de Nova York, NY</li>
+    <li>Cor do Cabelo: Loiro</li>
+    <li>Altura: 1,91m</li>
+    <li>Peso: 117kg</li>
+    <li>Primeira Aparição: The Amazing Spider-Man #299 (1 de Abril de 1988)</li>
+</ul>
+
+<img src="https://cdn.vox-cdn.com/thumbor/fT8sDADGWmbv1siTDWPhy5oV57E=/1400x1400/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/23005590/RCO033_1636569021_copy.jpg">`
+    }
+
+function abutre(){
+    nomePersonagem.innerHTML = `Abutre`
+Bio.innerHTML = `<ul>
+    <li>Nome Real: Adrian Toomes </li>
+    <li>Ocupação: Criminoso Profissional / Ex-engenheiro elétrico</li>
+    <li>Reside em: Staten Island, NY</li>
+    <li>Cor do Cabelo: Careca</li>
+    <li>Altura: 1,80m</li>
+    <li>Peso: 79kg</li>
+    <li>Primeira Aparição: The Amazing Spider-Man #2 (1 de Maio de 1963)</li>
+</ul>
+
+<img src="https://i.goopics.net/ppvxv.jpg">`
+
+}
+
+function schocker(){
+nomePersonagem.innerHTML = `Schocker`
+Bio.innerHTML = `<ul>
+    <li>Nome Real: Herman Schultz</li>
+    <li>Ocupação: Criminoso Profissional</li>
+    <li>Reside em: </li>
+    <li>Cor do Cabelo: Preto</li>
+    <li>Altura: 1,75m</li>
+    <li>Peso: 79kg</li>
+    <li>Primeira Aparição: The Amazing Spider-Man #46 (1 de Março de 1967)</li>
+</ul>
+
+<img src="https://1.bp.blogspot.com/-M9sWCzptot4/VUg98gZ3FzI/AAAAAAAAcxw/T6_skLz6KKA/s1600/Shocker%2BMarvel%2BComics.jpg">`
+
+
+
+}
+
+</script>

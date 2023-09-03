@@ -1,0 +1,481 @@
+*{
+
+    font-family: 'Gothic A1', sans-serif;
+    
+}
+
+@font-face{
+    font-family: 'Homoarakhn';
+    src: url('Homoarakhn.ttf');
+}
+
+@font-face{
+    font-family: 'Amazing Spider Man slant';
+    src: url('Amazing Spider Man slant.ttf');
+}
+
+@font-face{
+    font-family: 'good times';
+    src: url('good times rg.otf');
+}
+
+@font-face{
+    font-family: 'VetoSansCond-BoldItalic';
+    src: url('VetoSansCond-BoldItalic.otf');
+}
+
+b{
+    color:rgb(41, 105, 208);
+}
+
+
+body {
+
+    margin: 0;
+    overflow-x: hidden;
+    font-family: 'Gothic A1', sans-serif;
+    background-color: black;
+    color: white;
+
+}
+
+
+body::-webkit-scrollbar {
+    width: 5px;               /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: rgb(0, 0, 0);        /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: rgb(240, 70, 70);    
+    border-radius: 30px;       /* roundness of the scroll thumb */
+    border: 3px solid rgb(198, 47, 47) /* creates padding around scroll thumb */
+  }
+
+
+
+.container {
+    background: black;
+    color: white;
+    border-radius: 12px;
+    padding: 0.5px;
+    width: 100%;
+    height: 55px;
+}
+
+
+
+#logo {
+    display: flex;
+    justify-content: space-evenly;
+    width: 45px;
+    height: 45px;
+    margin-right: 655px;
+    margin-left: 205px;
+    align-items: center;
+
+}
+
+#header{
+
+margin-top: -3px;
+
+}
+
+
+#header .navBar {
+
+    font-size: 15px;
+    height: 21px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    list-style: none;
+    margin-right: 15px;
+    
+
+}
+
+#header .navBar a:link {
+    color: white;
+    text-decoration: none;
+}
+
+#header .navBar a:active {
+    color: white;
+    text-decoration: none;
+}
+
+#header .navBar a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+#header .navBar2 a:link {
+    color: white;
+    text-decoration: none;
+}
+
+#header .navBar2 a:active {
+    color: white;
+    text-decoration: none;
+}
+
+#header .navBar2 a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+
+#aranhaNav{
+    transition-duration: 0.5s;
+}
+
+#aranhaNav:hover{
+    box-shadow: 5px 6px 10px rgb(97, 7, 97);
+    transform: scale(1.1);
+    font-family: 'VetoSansCond-BoldItalic';
+}
+
+/* fim de configurações de navBar */
+
+
+/* #videoAranha {
+
+    position: relative;
+    margin-top: -16px;
+    width: 100%;
+} */
+
+ 
+h2{
+    color: red;
+}
+
+#video video{   
+    position: absolute;
+    left: 0;
+    top:  0;
+    width: 100%;
+    height: auto;
+    
+} 
+
+
+
+
+#video{
+    font-size: 30px;
+    text-align: center;
+    position: relative;
+    padding: 16px;
+    height: 700px;
+}
+
+ .titulo {
+
+margin: 0;
+position: absolute;
+top: 50%;
+left: 50%;
+margin-right: -50%;
+transform: translate(-50%, -50%);
+
+    
+}
+
+.titulo2{
+    margin: 0;
+    position: absolute;
+    top: 59%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* #videoAranha{
+    position: relative;
+    min-width: 100%;
+    height: 100%;
+    background-size: cover;
+    object-fit: cover;
+    top: 50%;
+    left: 50%;
+    /* -webkit-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%); */
+    /* transform: translateX(-50%) translateY(-50%); 
+}*/
+
+/* Fim de configurações de video e navBar */
+
+/* Introdução do tema */
+
+#introdução{
+margin-left: 35%;
+margin-top: 250px;
+text-justify: auto;
+text-align: justify;
+line-height: 1.4em;
+width: 580px;
+
+}
+
+#introdução h2{
+
+    color: red;
+    margin-left: 35%;
+
+}
+
+#primeiraAparicao{
+    margin-left: 19%;
+    transition-duration: 0.7s;
+
+}
+
+#primeiraAparicao:hover{
+box-shadow: 0px 2px 50px rgba(249, 131, 131, 0.848);
+
+}
+
+.legenda{
+    margin-left: 9%;
+}
+
+#criação{
+    margin-top: 100px;
+}
+#criação h2{
+    margin-left: 30%;
+}
+
+/* Começo da div sobre filmes */
+
+
+#Cinema{
+    
+    margin-top: 15%;      
+    background-image: url('https://a-static.besthdwallpaper.com/amazing-spiderman-logo-wallpaper-1600x1200-106853_23.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: contain;
+    background-position-x: 50%;
+}
+
+#filmes h2{
+    margin-left: 2%;
+}
+#Cinema img{
+    
+    height: 324px;
+    width: 261px;
+}
+#filmes{
+    margin-top: 5%;
+    
+}
+
+#tituloCinema{
+    margin-left: 48%;
+}
+
+/* Trilogia Tobey */
+.trilogiaTobey{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#raimi{
+    font-family: 'Homoarakhn';
+    color: silver;
+}
+
+#tobey1{
+    transition-duration: 0.5s;
+}
+
+#tobey1:hover{
+ transform: scale(1.1);
+ box-shadow:0px 2px 50px rgb(213, 170, 40)
+}
+#tobey2{
+    transition-duration: 0.5s;
+}
+#tobey2:hover{
+    transform: scale(1.1);
+    box-shadow:0px 2px 50px rgb(239, 41, 23);
+}
+#tobey3{
+    transition-duration: 0.5s;
+}
+#tobey3:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 2px 50px rgb(17, 58, 148) ;
+}
+
+/* Filmes Garfield */
+.Espetacular{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#webb{
+    font-family: 'Amazing Spider Man slant';
+    color: silver;
+    font-size: 25px;
+    margin-top: 11%;
+}
+
+#andrew1{
+    transition-duration: 0.5s;
+}
+#andrew1:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 2px 50px red;
+}
+
+#andrew2{
+    transition-duration: 0.5s;
+}
+#andrew2:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 2px 50px rgb(41, 105, 208);
+}
+
+/* trilogia home */
+.trilogiaHome{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 10%;
+}
+#Watts{
+    font-family: 'good times';
+    color: silver;
+    margin-top: 11%;
+}
+#holland1{
+    transition-duration: 0.5s;
+}
+#holland1:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 2px 50px rgb(130, 202, 226);
+}
+
+#holland2{
+    transition-duration: 0.5s;
+}
+
+#holland2:hover{
+transform: scale(1.1);
+box-shadow: 0px 2px 50px rgb(196, 17, 1);
+}
+#holland3{
+    transition-duration: 0.5s;
+}
+#holland3:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 2px 50px rgb(17, 133, 30);
+}
+
+
+/* Animações Miles */
+.filmeAranhaverso{
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+   margin-bottom: 4%;
+}
+
+#into{
+    transition-duration: 0.5s;
+}
+
+#into:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 2px 50px rgb(213, 170, 40)
+}
+
+#across{
+    transition-duration: 0.5s;
+}
+#across:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 2px 50px rgb(169, 19, 169);
+}
+
+/* Fim da div sobre filmes */
+
+/* Galeria de Personagens */
+
+#tituloGaleria{
+    margin-top: 14%;
+    margin-left: 42%;
+}
+
+
+button img{
+    width: 80px;
+    height: 80px;
+    border-radius: 20px;
+}
+
+button{
+    padding: 10px;
+    margin-left: 20%;
+    border-radius: 20px;
+    background-color:rgb(198, 47, 47);
+    border-color:rgb(9, 39, 104);
+    border-style: groove;
+    transition-duration: 0.3s;    
+}
+
+button:hover{
+    transform: scale(1.1);
+}
+
+#personagens h3{
+    font-family: 'good times';
+    margin-left: 5%;
+    
+}
+#nomePersonagem{
+    margin-left: 50%;
+}
+#Bio li{
+   list-style: none;
+   text-decoration: none;
+   margin-left: 21%;
+   
+}
+
+#Bio ul{
+    display: block;
+    margin-top: 5%;
+    
+}
+#personagens h3{
+    margin-top: 9%;
+    margin-left: 20%;
+}
+#Bio{
+    display: flex;
+    margin-top: 3%;
+    padding: 8%;
+
+}
+
+#Bio img{
+
+    width: 350px;
+    height: 450px;
+    margin-left: 12%;
+    margin-top: -8%;
+}
