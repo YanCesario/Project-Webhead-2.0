@@ -273,7 +273,31 @@ margin-top: -21%;
 
 
 #peniParker{
-    background: rgb(238, 41, 41)
+    background: rgba(153, 17, 17, 0.553);
+    padding: 4%;
+}
+
+#peniParker img{
+    width: 380px;
+    padding: 10px;
+    height: 350px;
+    border: 4px solid rgb(150, 150, 224);
+    margin-left: 70%;
+}
+
+.descricaoPeni{
+    width: 480px;
+    height: 280px;
+    text-align: justify;
+    align-items: center;
+    margin-left: 12%;
+    margin-top: -21%;
+    color: rgb(150, 150, 224);
+}
+
+.peniFig{
+    color: rgb(150, 150, 224);
+    margin-left: 78%;
 }
 
 
