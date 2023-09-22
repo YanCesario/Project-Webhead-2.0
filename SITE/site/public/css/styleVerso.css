@@ -300,6 +300,36 @@ margin-top: -21%;
     margin-left: 78%;
 }
 
+#punkAranha{
+background: rgb(0, 27, 105, 0.53);
+padding: 4%;
+}
+
+#punkAranha img{
+    width: 380px;
+    padding: 10px;
+    height: 350px;
+    border: solid 4px #C9072A;
+}
+
+.descricaoPunk{
+    color: #fb0936;
+    width: 480px;
+    height: 280px;
+    text-align: justify;
+    align-items: center;
+    margin-left: 50%;
+    margin-top: -21%;
+}
+
+.punkFig{
+    margin-left: 8%;
+    color: #C9072A;
+}
+
+
+
+
 
 /* cadastrar Aranhas */
 .analyticAranha{
