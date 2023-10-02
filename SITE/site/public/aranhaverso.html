@@ -234,6 +234,8 @@ function criarGrafico(){
         // Agora vá para o método fetch logo abaixo
         var aranhaVar = Number(opcoes.value);
         var fkUsuarioVar = Number(sessionStorage.getItem('ID_USUARIO'));
+        sessionStorage.setItem("aranhaEscolhido", aranhaVar)
+
 
         console.log(fkUsuarioVar)
 

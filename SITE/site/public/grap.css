@@ -1,0 +1,36 @@
+.chart{
+    height: 700 px;
+    width: 400 px;
+
+}
+/* Change the background color of the body */
+body {
+    background-color: #f4f4f4;
+}
+
+/* Change the color of the nav */
+nav {
+    background-color: #333;
+}
+
+/* Add a hover effect to the nav links */
+nav a:hover {
+    color: #ddd;
+}
+
+/* Style the canvas elements */
+canvas {
+    display: block;
+    margin: 0 auto;
+    max-width: 800px;
+    margin-bottom: 20px;
+}
+
+/* Add a heading above the charts */
+canvas::before {
+    content: attr(id);
+    display: block;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
