@@ -416,8 +416,9 @@ box-shadow: 0px 2px 50px rgb(196, 17, 1);
 /* Galeria de Personagens */
 
 #tituloGaleria{
-    margin-top: 14%;
-    margin-left: 42%;
+    margin-top: 11%;
+    margin-left: 33%;
+    font-size: 45px;
 }
 
 
