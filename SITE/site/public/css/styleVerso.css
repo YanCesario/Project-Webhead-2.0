@@ -1,4 +1,4 @@
-@font-face{
+@font-face {
     font-family: 'VetoSansCond-BoldItalic';
     src: url('VetoSans-BoldItalic.ttf');
 }
@@ -14,7 +14,7 @@
     text-decoration: none;
     list-style: none;
     margin-right: 15px;
-    
+
 }
 
 .container {
@@ -39,63 +39,63 @@
 }
 
 
-#header2{
+#header2 {
     margin-top: -3px;
-    
+
 }
-    
-    
-    #header2 .navBar2 {
-    
-        font-size: 15px;
-        height: 21px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        text-decoration: none;
-        list-style: none;
-        margin-right: 15px;
-        
-    
-    }
-    
-    #header2 .navBar a:link {
-        color: white;
-        text-decoration: none;
-    }
-    
-    #header2 .navBar a:active {
-        color: white;
-        text-decoration: none;
-    }
-    
-    #header2 .navBar a:visited {
-        color: white;
-        text-decoration: none;
-    }
-    
-    
-    
-    #header2 .navBar2 a:link {
-        color: white;
-        text-decoration: none;
-    }
-    
-    #header2 .navBar2 a:active {
-        color: white;
-        text-decoration: none;
-    }
-    
-    #header2 .navBar2 a:visited {
-        color: white;
-        text-decoration: none;
-    }
-    
-#aranhaNav{
+
+
+#header2 .navBar2 {
+
+    font-size: 15px;
+    height: 21px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    list-style: none;
+    margin-right: 15px;
+
+
+}
+
+#header2 .navBar a:link {
+    color: white;
+    text-decoration: none;
+}
+
+#header2 .navBar a:active {
+    color: white;
+    text-decoration: none;
+}
+
+#header2 .navBar a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+#header2 .navBar2 a:link {
+    color: white;
+    text-decoration: none;
+}
+
+#header2 .navBar2 a:active {
+    color: white;
+    text-decoration: none;
+}
+
+#header2 .navBar2 a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+#aranhaNav {
     transition-duration: 0.5s;
 }
 
-#aranhaNav:hover{
+#aranhaNav:hover {
     box-shadow: 5px 4px rgb(97, 7, 97);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
@@ -103,42 +103,43 @@
 
 /* Cards descritivos */
 
-#container3{
+#container3 {
     background-image: url("https://c4.wallpaperflare.com/wallpaper/194/992/899/spider-verse-spiderverse-into-the-spiderverse-spiderman-miles-morales-new-york-city-hd-wallpaper-preview.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     margin-top: -7%;
-    
+
 }
 
-figcaption{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+figcaption {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 30px;
 
 }
 
 
-#cardMiles{
+#cardMiles {
     /* border: 4px solid red; */
     /* border-style: inset; */
     width: 450px;
 }
-.milesfig{
-font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-font-size: 25px;
-margin-left: 30%;
-color: rgb(238, 41, 41);
-font-size: 30px;
+
+.milesfig {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    margin-left: 30%;
+    color: rgb(238, 41, 41);
+    font-size: 30px;
 
 }
 
-#miles{
+#miles {
     background: rgba(45, 6, 73, 0.397);
     padding: 4%;
 }
 
-#miles img{
+#miles img {
     width: 350px;
     padding: 10px;
     height: 350px;
@@ -148,7 +149,7 @@ font-size: 30px;
 }
 
 
-.descricaoMiles{
+.descricaoMiles {
     width: 480px;
     height: 280px;
     text-align: justify;
@@ -159,17 +160,17 @@ font-size: 30px;
 }
 
 
-#spiderGwen{
+#spiderGwen {
     background: rgba(221, 47, 76, 0.397);
     padding: 4%;
 }
 
-.gwenFig{
+.gwenFig {
     margin-left: 78%;
     color: aqua;
 }
 
-#spiderGwen img{
+#spiderGwen img {
     width: 350px;
     padding: 10px;
     height: 350px;
@@ -177,7 +178,7 @@ font-size: 30px;
     border: 4px solid aquamarine;
 }
 
-.descricaoGwen{
+.descricaoGwen {
     width: 480px;
     height: 280px;
     text-align: justify;
@@ -187,18 +188,18 @@ font-size: 30px;
     color: pink;
 }
 
-#aranhaNoir{
-background: rgba(0, 0, 0, 0.577);
-padding: 4%;
+#aranhaNoir {
+    background: rgba(0, 0, 0, 0.577);
+    padding: 4%;
 
 }
 
-.noirFig{
+.noirFig {
     margin-left: 10%;
 
 }
 
-#aranhaNoir img{
+#aranhaNoir img {
     width: 350px;
     padding: 10px;
     height: 350px;
@@ -206,7 +207,7 @@ padding: 4%;
     border: 4px solid black;
 }
 
-.descricaoNoir{
+.descricaoNoir {
     width: 480px;
     height: 280px;
     text-align: justify;
@@ -215,12 +216,12 @@ padding: 4%;
     margin-top: -21%;
 }
 
-#presuntoAranha{
+#presuntoAranha {
     background: rgba(255, 0, 0, 0.553);
     padding: 4%;
 }
 
-#presuntoAranha img{
+#presuntoAranha img {
     width: 380px;
     padding: 10px;
     height: 350px;
@@ -228,13 +229,13 @@ padding: 4%;
     margin-left: 70%;
 }
 
-.presuntoFig{
+.presuntoFig {
     color: blue;
     margin-left: 78%;
-    
+
 }
 
-.descricaoPresunto{
+.descricaoPresunto {
     width: 480px;
     height: 280px;
     text-align: justify;
@@ -245,39 +246,40 @@ padding: 4%;
 }
 
 
-#Aranha2099{
+#Aranha2099 {
     background: rgba(4, 4, 123, 0.533);
     padding: 4%;
 }
 
-#Aranha2099 img{
-    width: 380px;
+#Aranha2099 img {
+    width: 350px;
     padding: 10px;
     height: 350px;
-    border: solid 4px #EA5C00;
+    margin-left: 3%;
+    border: 4px solid #EA5C00;
 }
 
-.miguelFig{
-    margin-left: 8%;
+.miguelFig {
+    margin-left: 10%;
     color: #EA5C00;
 }
 
-.descricao2099{
-width: 480px;
-height: 280px;
-text-align: justify;
-align-items: center;
-margin-left: 50%;
-margin-top: -21%;
+.descricao2099 {
+    width: 480px;
+    height: 280px;
+    text-align: justify;
+    align-items: center;
+    margin-left: 50%;
+    margin-top: -21%;
 }
 
 
-#peniParker{
+#peniParker {
     background: rgba(153, 17, 17, 0.553);
     padding: 4%;
 }
 
-#peniParker img{
+#peniParker img {
     width: 380px;
     padding: 10px;
     height: 350px;
@@ -285,7 +287,7 @@ margin-top: -21%;
     margin-left: 70%;
 }
 
-.descricaoPeni{
+.descricaoPeni {
     width: 480px;
     height: 280px;
     text-align: justify;
@@ -295,24 +297,25 @@ margin-top: -21%;
     color: rgb(150, 150, 224);
 }
 
-.peniFig{
+.peniFig {
     color: rgb(150, 150, 224);
     margin-left: 78%;
 }
 
-#punkAranha{
-background: rgb(0, 27, 105, 0.53);
-padding: 4%;
+#punkAranha {
+    background: rgb(0, 27, 105, 0.53);
+    padding: 4%;
 }
 
-#punkAranha img{
-    width: 380px;
+#punkAranha img {
+    width: 350px;
     padding: 10px;
     height: 350px;
-    border: solid 4px #C9072A;
+    margin-left: 3%;
+    border: 4px solid #C9072A;
 }
 
-.descricaoPunk{
+.descricaoPunk {
     color: #fb0936;
     width: 480px;
     height: 280px;
@@ -322,8 +325,8 @@ padding: 4%;
     margin-top: -21%;
 }
 
-.punkFig{
-    margin-left: 8%;
+.punkFig {
+    margin-left: 10%;
     color: #C9072A;
 }
 
@@ -332,15 +335,19 @@ padding: 4%;
 
 
 /* cadastrar Aranhas */
-.analyticAranha{
+
+.analyticAranha {
+    margin: 0;
     background-color: rgba(97, 7, 97, 0.438);
-    width: 29%;
-    padding: 9%;
+    width: 600px;
+    height: 600px;
+    padding: 5%;
     margin-left: 25%;
     margin-top: 15%;
+    border: 4px solid black;
 }
 
-.analyticAranha select{
+.analyticAranha select {
     border-radius: 12px;
     width: 105px;
     padding: 2px;
@@ -348,7 +355,6 @@ padding: 4%;
     margin-left: 35%;
 }
 
-.analyticAranha button{
+.analyticAranha button {
     margin-top: 15%;
 }
-

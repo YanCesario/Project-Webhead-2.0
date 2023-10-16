@@ -105,58 +105,66 @@
                         src="https://media.tenor.com/0kGF_YNaUb8AAAAC/miguel-ohara-spiderman2099.gif"></div>
                 <figcaption class="miguelFig">Miguel O'Hara</figcaption>
                 <h3 class="descricao2099">Miguel O'Hara é o Homem-Aranha da Terra-928. Após cair numa armadilha e se
-                    tornar dependente de uma droga produzida pela Alchemax induzido por seu antigo chefe, Miguel invade o laboratório buscando usar o experimento com DNA de aracnídeos que modificou dias antes para livrá-lo do vício, mas o experimento estava sabotado. Depois do experimento</h3>
+                    tornar dependente de uma droga produzida pela Alchemax induzido por seu antigo chefe, Miguel invade
+                    o laboratório buscando usar o experimento com DNA de aracnídeos que modificou dias antes para
+                    livrá-lo do vício, mas o experimento estava sabotado. Depois do experimento</h3>
             </div>
 
-<div id="peniParker">
+            <div id="peniParker">
 
-<div id="cardPeni"> 
-    <img src="https://media.tenor.com/i6DKVIIyWLQAAAAC/peni-parker.gif">
-    <figcaption class="peniFig">Peni Parker</figcaption>
-    <h3 class="descricaoPeni">Proveniente da Terra-14512, Peni vive em um mundo que seria o equivalente a nosso ano 3145.Peni é descrita como inteligente, simpática, dura, agressiva, um pouco vaidosa e presunçosa, fofa, otimista, enérgica, enérgica, borbulhante, alegre e uma boa heroína.</h3>
+                <div id="cardPeni">
+                    <img src="https://media.tenor.com/i6DKVIIyWLQAAAAC/peni-parker.gif">
+                    <figcaption class="peniFig">Peni Parker</figcaption>
+                    <h3 class="descricaoPeni">Proveniente da Terra-14512, Peni vive em um mundo que seria o equivalente
+                        a nosso ano 3145. Peni é descrita como inteligente, simpática, dura, agressiva, um pouco vaidosa
+                        e presunçosa, fofa, otimista, enérgica, enérgica, borbulhante, alegre e uma boa heroína.</h3>
 
-</div>
-</div>
+                </div>
+            </div>
 
 
-<div id="punkAranha">
+            <div id="punkAranha">
 
-    <div id="cardPunk">
-<img src="https://64.media.tumblr.com/f22748798a12162a0a95262e46aa5987/4892447e51426197-3c/s540x810/ed9c2808c5b881467c87970c212f699d289a4f45.gif">
-<figcaption class="punkFig">Punk-Aranha</figcaption>
-<h3 class="descricaoPunk">Vindo da Terra-318, Hobbie Brown também foi picado por uma aranha radioativa que lhe concedeu alguns poderes e habilidades sobre-humanas. Em sua terra, Hobbie enfrenta um regime totalitário liderado pelo presidente Norman Osborn com seu exército de simbiontes utilizando do som de sua guitarra e seus outros poderes. Hobbie é descrito como rebelde, corajoso, leal, sincero e afrontoso.</h3>
+                <div id="cardPunk">
+                    <img
+                        src="https://64.media.tumblr.com/f22748798a12162a0a95262e46aa5987/4892447e51426197-3c/s540x810/ed9c2808c5b881467c87970c212f699d289a4f45.gif">
+                    <figcaption class="punkFig">Hobbie Brown</figcaption>
+                    <h3 class="descricaoPunk">Vindo da Terra-318, Hobbie Brown também foi picado por uma aranha
+                        radioativa que lhe concedeu alguns poderes e habilidades sobre-humanas. Em sua terra, Hobbie
+                        enfrenta um regime totalitário liderado pelo presidente Norman Osborn com seu exército de
+                        simbiontes utilizando do som de sua guitarra e seus outros poderes. Hobbie é descrito como
+                        rebelde, corajoso, leal, sincero e afrontoso.</h3>
 
-    </div>
-</div>
+                </div>
+            </div>
 
         </div>
 
 
+        <div class="borda">
+            <div class="analyticAranha">
+                <h2>Qual seu do Homem Aranha/Mulher-Aranha favorito(a)?</h2>
 
+                <select id="opcoes">
+                    <option value="1">Gwen</option>
+                    <option value="2">Miles</option>
+                    <option value="3">Noir</option>
+                    <option value="4">Porker</option>
+                    <option value="5">Miguel</option>
+                    <option value="6">Peni</option>
+                    <option value="7">Hobbie</option>
+                </select>
 
-        <div class="analyticAranha">
-            <h2>Qual seu do Homem Aranha/Mulher-Aranha favorito(a)?</h2> 
+                <br>
 
-            <select id="opcoes">
-                <option value="1">Gwen</option>
-                <option value="2">Miles</option>
-                <option value="3">Noir</option>
-                <option value="4">Porker</option>
-                <option value="5">Miguel</option>
-                <option value="6">Peni</option>
-                <option value="7">Hobbie</option>
-            </select> 
+                <button onclick="cadastrarAranha()">Inserir Aranha</button>
+                <div class="grafico">
+                    <canvas id="myChartCanvas"></canvas>
+                </div>
 
-                        <br>
-
-            <button onclick="cadastrarAranha()">Inserir Aranha</button>
-            <div class="grafico">
-                <canvas id="myChartCanvas"></canvas>
             </div>
-    
         </div>
 
-        
 </body>
 
 </html>
@@ -165,8 +173,8 @@
 <script>
 
 
-function criarGrafico(){
-    fetch(`/medidas/ultimas/`, { cache: 'no-store' }).then(function (response) {
+    function criarGrafico() {
+        fetch(`/medidas/ultimas/`, { cache: 'no-store' }).then(function (response) {
             if (response.ok) {
                 response.json().then(function (resposta) {
                     console.log(`Dados recebidos: ${JSON.stringify(resposta)}`);
@@ -181,7 +189,7 @@ function criarGrafico(){
             .catch(function (error) {
                 console.error(`Erro na obtenção dos dados p/ gráfico: ${error.message}`);
             });
-}
+    }
     function plotarGrafico(resposta) {
 
         console.log('iniciando plotagem do gráfico...');
@@ -193,7 +201,7 @@ function criarGrafico(){
         let dados = {
             labels: labels,
             datasets: [{
-                label: 'vezes de cada aranha',
+                label: 'Votação de aranhas favoritos',
                 data: [],
                 fill: false,
                 borderColor: '#fff',
@@ -210,7 +218,7 @@ function criarGrafico(){
             dados.datasets[0].data.push(registro.usuarios);
         }
 
-   
+
         const config = {
             type: 'bar',
             data: dados,
@@ -222,9 +230,6 @@ function criarGrafico(){
         );
 
     }
-
-
-
 
 
     function cadastrarAranha() {
@@ -289,5 +294,5 @@ function criarGrafico(){
     }
 
 
-  
+
 </script>

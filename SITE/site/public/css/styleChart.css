@@ -5,7 +5,8 @@
 
 #containerGrafico{
     width: 1000px;
-    margin-left: 210px;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 80px;
 }
 
