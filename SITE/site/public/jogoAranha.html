@@ -38,6 +38,7 @@
   <div class="exibicao" id="contador">0</div> <h2>milisegundos passados </h2>
   <div class="exibicao" id="pontosG">0</div> <h2>Pontos </h2>
   <!-- <button onclick="enviarAoBanco(); renit()" class="button-1" role="button">Button 1</button>   -->
+  <button><a href="grafico.html">Ver Estatísticas</a></button>
   
   <div id="game_over">
   </div>
@@ -86,7 +87,7 @@ const canvas = document.getElementById('canvas');
   character.y = canvas.height - 30;
   jogoPau = true;
   contPau = true;
-  game_over.innerHTML = `<button onclick="enviarAoBanco()" class="button-1" role="button">Button 1</button>`
+  game_over.innerHTML = `<button onclick="enviarAoBanco()" class="button-1" role="button">Recomeçar</button>`
 }
 
 function enviarAoBanco(){ 
