@@ -145,7 +145,7 @@
 
         <div class="borda">
             <div class="analyticAranha">
-                <h2>Qual seu do Homem Aranha/Mulher-Aranha favorito(a)?</h2>
+                <h2>Agora que sabe mais sobre a personalidade dos Aranhas, qual seu do Homem Aranha/Mulher-Aranha favorito(a)?</h2>
 
                 <select id="opcoes">
                     <option value="1">Gwen</option>
@@ -160,6 +160,9 @@
                 <br>
 
                 <button onclick="cadastrarAranha()">Inserir Aranha</button>
+                <div id="tituloGrafico">
+                    <p>Veja os votos totais dos usuários!</p>
+                </div>
                 <div class="grafico">
                     <canvas id="myChartCanvas"></canvas>
                 </div>
@@ -201,9 +204,19 @@
 
         // Criando estrutura para plotar gráfico - dados
         let dados = {
+            
             labels: labels,
             datasets: [{
                 label: 'Votação de aranhas favoritos',
+                backgroundColor: [
+                    'rgb(201, 7, 42)',
+                    'rgb(150, 150, 224)',
+                    'rgb(234, 92, 0)',
+                    'blue',
+                    'gray',
+                    'rgb(0, 0, 0)',
+                    'aquamarine'
+                ],
                 data: [],
                 fill: false,
                 borderColor: '#fff',
