@@ -9,7 +9,7 @@ function listar() {
     return database.executar(instrucao);
 }
 
-
+// Configurando função para enviar os pontos do minigame relacionado ao usuário no banco, com seu personagem já escolhido
 function resultadoAoBanco(resultado, idUsuario, fkAranha, pedras, segundos) {
 
 

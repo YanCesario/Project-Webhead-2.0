@@ -4,25 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="grap.css">
+    <title>Project: Webhead - Estatísticas</title>
+    <link rel="stylesheet" href="./css/grap.css">
+    <link rel="stylesheet" href="./css/styleLogin.css">
+    <link rel="stylesheet" href="./css/estilo.css">
+    <!-- <link rel="stylesheet" href="./css/style.css"> -->
+    <!-- <link rel="stylesheet" href="./css/styleNavBar.css"> -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 </head>
 <body onload="grafico()">    
+  <!--header inicio-->
+  <div class="header">
+    <div class="container">
+        <ul class="navbar">
+            <li><a href="jogoAranha.html"><img id="logo" src="../WebHead base/Imagens/logo aranha branco.png"></a></li>
+        </ul>
+    </div>
+</div>
+<!--header fim-->
+<p>*Clique no ícone acima para retornar ao jogo*</p>
+<h1>Estatísticas de usuários por Aranha escolhido (Página "aranhaverso")</h1>
 
-
-
-    <div class="graph" style="background-color: cyan;">
+    <div class="graph">
         <canvas id="myChartCanvas"></canvas>
     </div>
-
-<center></center>
-<center></center>
-<center></center>
-<center></center>
-<center></center>
-
 
 </body>
 </html>
@@ -30,7 +36,7 @@
 <script>
 
 
-
+    //Adicionando função para captura de dados e plotação de gráfico
     function grafico(){
     fetch(`/medidas/tempo-real/`, { cache: 'no-store' }).then(function (response) {
             if (response.ok) {
@@ -55,11 +61,20 @@
         // Criando estrutura para plotar gráfico - labels
         let labels = [];
 
-        // Criando estrutura para plotar gráfico - dados
+        // Criando estrutura para plotar gráfico - dados, tipo e cores
         let dados = {
             labels: labels,
             datasets: [{
-                label: 'quantidade total de pontos de cada aranha',
+                label: 'Quantidade total de pontos de cada aranha selecionado',
+                backgroundColor:[ 
+                    'rgb(0, 27, 105, 0.53)',
+                'rgb(150, 150, 224)',
+                'rgb(234, 92, 0)',
+                'blue',
+                'gray',
+                'black',
+                'aqua'
+                ],
                 data: [],
                 fill: false,
                 borderColor: '#fff',

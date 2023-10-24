@@ -6,40 +6,43 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/jogo.css">
+  <link rel="stylesheet" href="./css/estilo.css">
   <link rel="stylesheet" href="./css/style.css">
 
   <title>Project: Webhead - Minigame</title>
 </head>
 
 <body>
-  <div id="header">
+  <div id="headerGame">
 
     <div class="container">
-        <ul class="navBar">
-            <li><img id="logo"
-                    src="./WebHead base/Imagens/logo aranha branco.png"></li>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="galeriaPersonagens.html">Galeria de Personagens</a></li>
-            <li><a href="jogoAranha.html">Minigame</a></li>
-            <li id="aranhaNav"><a href="aranhaverso.html">Aranhaverso</a></li>
-            <li>|</li>
-            <li><a href="index.html">Sair</a></li>
-        </ul> 
+      <ul class="navBarGame">
+        <li><img id="logo" src="./WebHead base/Imagens/logo aranha branco.png"></li>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="galeriaPersonagens.html">Galeria de Personagens</a></li>
+        <li><a href="jogoAranha.html">Minigame</a></li>
+        <li id="aranhaNav"><a href="aranhaverso.html">Aranhaverso</a></li>
+        <li>|</li>
+        <li><a href="index.html">Sair</a></li>
+      </ul>
 
     </div>
-</div>
+  </div>
 
 
   <h1>Minigame</h1>
+  <p><b>O Homem-Areia atacou a cidade e você deve impedir que os destroços caiam! Use seu mouse para salvar o dia!</b></p>
   <span class="btn">
-    <canvas id="canvas" width="1200" height="800 "></canvas>
+    <canvas id="canvas" width="1000" height="600"></canvas>
   </span>
 
-  <div class="exibicao" id="contador">0</div> <h2>milisegundos passados </h2>
-  <div class="exibicao" id="pontosG">0</div> <h2>Pontos </h2>
+  <div class="exibicao" id="contador">0</div>
+  <h2>milisegundos passados </h2>
+  <div class="exibicao" id="pontosG">0</div>
+  <h2>Pontos </h2>
   <!-- <button onclick="enviarAoBanco(); renit()" class="button-1" role="button">Button 1</button>   -->
-  <button><a href="grafico.html">Ver Estatísticas</a></button>
-  
+  <button id="botaoMetricas"><a href="grafico.html">Ver Estatísticas</a></button>
+
   <div id="game_over">
   </div>
 
@@ -48,14 +51,16 @@
 </html>
 <script>
 
-var milSeg = 0;
-var pedrasVar1 = 0
+//Estabelecendo variáveis de elementos do jogo
+  var milSeg = 0;
+  var pedrasVar1 = 0
   var segundos1 = 0
-  var pontuacao1 =0
+  var pontuacao1 = 0
   var jogoPau = false
   var contPau = false
 
   var contador = document.getElementById('contador');
+
 
   function atualizarContador() {
     milSeg += 1;
@@ -64,87 +69,92 @@ var pedrasVar1 = 0
 
 
 
-
-const canvas = document.getElementById('canvas');
+ 
+  const canvas = document.getElementById('canvas');
   const ctx = canvas.getContext('2d');
-  
+
   const pontosElement = document.getElementById('pontosG');
   let pontos = 0;
-  
-  var pedrasFinais =0 
+
+  var pedrasFinais = 0
   var pontosFinais = 0
   var segundosFinais
 
   const pedras = [];
 
+ 
+ //Estabelecendo função de game over (para o jogo quando o usuário perde)
   function pararJogo() {
     pontosElement.innerHTML = pontos;
     pedras.length = 0;
-    pontosFinais = pontos * milSeg  
+    pontosFinais = pontos * milSeg
     pedrasFinais = pontos * 0.1
     segundosFinais = milSeg / 100
-  character.x = canvas.width / 2;
-  character.y = canvas.height - 30;
-  jogoPau = true;
-  contPau = true;
-  game_over.innerHTML = `<button onclick="enviarAoBanco()" class="button-1" role="button">Recomeçar</button>`
-}
+    character.x = canvas.width / 2;
+    character.y = canvas.height - 30;
+    jogoPau = true;
+    contPau = true;
+    game_over.innerHTML = `<button onclick="enviarAoBanco()" class="button-1" role="button">Recomeçar</button>`
+  }
 
-function enviarAoBanco(){ 
-var idUsuario = sessionStorage.ID_USUARIO
-var resultado = pontosFinais
-var fkAranha = sessionStorage.aranhaEscolhido    
-var pedras = pedrasFinais
-var segundos = segundosFinais
-    if (idUsuario != '' && idUsuario != undefined) {        
-            fetch(`/aranha/resultadoAoBanco/${idUsuario}`, {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json"
-                },
-                body: JSON.stringify({
-                    // crie um atributo que recebe o valor recuperado aqui
-                    // Agora vá para o arquivo routes/usuario.js
-                    resultadoServer: resultado,
-                    fkAranhaServer: fkAranha,
-                    pedrasServer: pedras,
-                    segundosServer: segundos
-                })
-            })
-        } 
-        renit()
 
+  //Estabelecendo função de enviar as métricas de pontuação ao banco 
+  function enviarAoBanco() {
+    var idUsuario = sessionStorage.ID_USUARIO
+    var resultado = pontosFinais
+    var fkAranha = sessionStorage.aranhaEscolhido
+    var pedras = pedrasFinais
+    var segundos = segundosFinais
+    if (idUsuario != '' && idUsuario != undefined) {
+      fetch(`/aranha/resultadoAoBanco/${idUsuario}`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+          // crie um atributo que recebe o valor recuperado aqui
+          // Agora vá para o arquivo routes/usuario.js
+          resultadoServer: resultado,
+          fkAranhaServer: fkAranha,
+          pedrasServer: pedras,
+          segundosServer: segundos
+        })
+      })
     }
+    renit()
+
+  }
 
 
 
 
-function renit(){
-  pontos = 0
-  pedras.length = 0;
-  pontosElement.innerHTML = pontos;
-  milSeg  = 0
-  jogoPau = false;
-  contPau = false;
-  gameLoop()
-}
+  function renit() {
+    pontos = 0
+    pedras.length = 0;
+    pontosElement.innerHTML = pontos;
+    milSeg = 0
+    jogoPau = false;
+    contPau = false;
+    gameLoop()
+  }
 
+  //Criando função que calcula se o jogador sofrey dano
   function verColis() {
-  for (let i = 0; i < pedras.length; i++) {
-    const pedra = pedras[i];
-    const dx = character.x - pedra.x;
-    const dy = character.y - pedra.y;
-    const distance = Math.sqrt(dx * dx + dy * dy);
+    for (let i = 0; i < pedras.length; i++) {
+      const pedra = pedras[i];
+      const dx = character.x - pedra.x;
+      const dy = character.y - pedra.y;
+      const distance = Math.sqrt(dx * dx + dy * dy);
 
-    if (distance < pedra.radius && !pedra.isClicked) {
-  //oque acontece quando a pedra pega'
-  console.log("pegou")
-  pararJogo();
-  
+      if (distance < pedra.radius && !pedra.isClicked) {
+        //o que acontece quando a pedra pega'
+        console.log("pegou")
+        pararJogo();
 
+
+      }
     }
   }
-}
   //cria a classe pedra
   class pedra {
     constructor() {
@@ -154,7 +164,7 @@ function renit(){
       this.color = 'grey'
       this.isClicked = false
     }
-  
+
     draw() {
       ctx.beginPath()
       ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2)
@@ -162,13 +172,13 @@ function renit(){
       ctx.fill()
       ctx.closePath()
     }
-  
+
     update() {
       if (!this.isClicked) {
-        this.y += 2 
+        this.y += 2
       }
-  
-    
+
+
       if (
         this.y + this.radius > canvas.height &&
         this.x > character.x &&
@@ -181,90 +191,91 @@ function renit(){
       }
     }
   }
-  
+
   function desPerso() {
     ctx.fillStyle = character.color;
     ctx.fillRect(character.x, character.y - character.height, character.width, character.height);
   }
-  
+
   function update() {
     // bate o width setado pra ver se não chegou em nenhum limite
     if (character.x + character.width > canvas.width || character.x < 0) {
       character.direction *= -1;
     }
-  
-    // movimento
+
+    //Determina o movimento do personagem (quadrado vermelho)
     character.x += character.speed * character.direction;
-  
+
     // intervalo aleatorio de ciração
     if (Math.random() < 0.02) {
       pedras.push(new pedra())
     }
-  
+
     // atualiza as pedra e as desenhas
     for (let i = 0; i < pedras.length; i++) {
       pedras[i].update()
       pedras[i].draw()
-  
-  
+
+
     }
 
-    
+
   }
-  
+
   function limp() {
     ctx.clearRect(0, 0, canvas.width, canvas.height)
   }
-  
+
   function gameLoop() {
- if(jogoPau == false){
-  limp()
-  update()
-  desPerso()
-  requestAnimationFrame(gameLoop)
-  verColis()
-  if(contPau == false)
-  atualizarContador()
-  
- }
-}
+    if (jogoPau == false) {
+      limp()
+      update()
+      desPerso()
+      requestAnimationFrame(gameLoop)
+      verColis()
+      if (contPau == false)
+        atualizarContador()
 
-canvas.addEventListener('click', function(event) {
-  const mouseX = event.clientX - canvas.getBoundingClientRect().left;
-  const mouseY = event.clientY - canvas.getBoundingClientRect().top;
-
-  // vê se clicou na pedra
-  for (let i = 0; i < pedras.length; i++) {
-    const pedra = pedras[i];
-    const dx = mouseX - pedra.x
-    const dy = mouseY - pedra.y
-    const distance = Math.sqrt(dx * dx + dy * dy);
-
-    // se clica na pedra
-    if (distance < pedra.radius && !pedra.isClicked) {
-      pedra.isClicked = true;
-      pontos += 10;
-      pontosElement.innerHTML = pontos;
-
-    
-      pedras.splice(i, 1)
-      i--; 
     }
   }
-});
-  
+
+  canvas.addEventListener('click', function (event) {
+    const mouseX = event.clientX - canvas.getBoundingClientRect().left;
+    const mouseY = event.clientY - canvas.getBoundingClientRect().top;
+
+    // Calcula se clicou na pedra
+    for (let i = 0; i < pedras.length; i++) {
+      const pedra = pedras[i];
+      const dx = mouseX - pedra.x
+      const dy = mouseY - pedra.y
+      const distance = Math.sqrt(dx * dx + dy * dy);
+
+      // se clica na pedra
+      if (distance < pedra.radius && !pedra.isClicked) {
+        pedra.isClicked = true;
+        pontos += 10;
+        pontosElement.innerHTML = pontos;
+
+
+        pedras.splice(i, 1)
+        i--;
+      }
+    }
+  });
+
+  //Configurando jogador do usuário (quadrado vermelho)
   const character = {
     x: canvas.width / 2,//inicia lee na posião
-    y: canvas.height - 30, 
+    y: canvas.height - 30,
     width: 20,
     height: 30,
     color: 'red',
     //com esforço da pra colocar uma pixelart de cada boneco dependendo do escolhido
     speed: 2,
-    direction: 1 
+    direction: 1
   };
-  
-  //movimento
+
+  //Configurando movimento do personagem
   document.addEventListener('keydown', function (event) {
     if (event.key === 'ArrowLeft') {
       character.direction = -1
@@ -272,11 +283,11 @@ canvas.addEventListener('click', function(event) {
       character.direction = 1
     }
   });
-  
 
 
 
-    gameLoop()
-  
+
+  gameLoop()
+
 
 </script>

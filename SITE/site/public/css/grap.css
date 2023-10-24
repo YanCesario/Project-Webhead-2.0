@@ -1,24 +1,26 @@
 .chart{
-    height: 700 px;
-    width: 400 px;
-
-}
-/* Change the background color of the body */
-body {
-    background-color: #f4f4f4;
+    /* height: 550 px;
+    width: 500 px; */
+    margin-left: 42%;
+    
 }
 
-/* Change the color of the nav */
-nav {
-    background-color: #333;
+body p{
+    color: whitesmoke;
+    font-size: 12px;
+    margin-left: 42%;
+    
 }
 
-/* Add a hover effect to the nav links */
-nav a:hover {
-    color: #ddd;
+body h1{
+    color: red;
+    margin-left: 15%;
+    margin-top: 2%;
 }
 
-/* Style the canvas elements */
+
+
+/* Estilizando canvas */
 canvas {
     display: block;
     margin: 0 auto;
@@ -26,11 +28,20 @@ canvas {
     margin-bottom: 20px;
 }
 
-/* Add a heading above the charts */
+/* Acrescentando título acima dos gráficos */
 canvas::before {
     content: attr(id);
     display: block;
     text-align: center;
     font-size: 24px;
     margin-bottom: 10px;
+}
+
+
+.graph{
+    background-color: black;
+    width: 750px;
+    height: 450px;
+    margin-left: 22%;
+    margin-top: 5%;
 }
