@@ -26,6 +26,7 @@ canvas {
     margin: 0 auto;
     max-width: 800px;
     margin-bottom: 20px;
+    width: 750px;
 }
 
 /* Acrescentando título acima dos gráficos */
