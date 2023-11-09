@@ -4,7 +4,7 @@ Bem vindo ao Project: Webhead 🕷🕸!
 Me chamo Yan Coutinho, sou aluno da SpTech no curso de Sistemas de Informação e este é o repositório do meu projeto individual.
 O projeto foi desenvolvido com o intuito de reunir fãs do Homem-Aranha e contar mais sobre essa linda história da cultura Pop que nos influencia até hoje.
 
-Antes de tudo, o arquivos ".gitignore" contém os vídeos que são reproduzidos nas telas "Home" e "Aranhaverso", você deve baixar os vídeos e colocar na pasta "site" antes de inicializar o node:
+Antes de tudo, o arquivo ".gitignore" contém os vídeos que são reproduzidos nas telas "Home" e "Aranhaverso", você deve baixar os vídeos e colocar na pasta "site" antes de inicializar o node:
 Link dos videos: https://drive.google.com/drive/folders/18006GEWlR0Fjsrx7GmXmYI6Q0jXWNoQI?usp=drive_link
 
 O site possui está dividido nas seguintes sessões (páginas):
